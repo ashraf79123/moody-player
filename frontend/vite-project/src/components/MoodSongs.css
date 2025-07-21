@@ -1,0 +1,158 @@
+.mood-songs {
+  padding: 4rem 0rem 0 0 ;
+  
+   color: #0056b3;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mood-songs h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white; 
+  text-align: center;
+  font-weight: 600;
+
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(44, 42, 42);
+  padding: 2rem 10rem 2rem 10rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.songs:hover {
+  transform: translateY(-3px);
+}
+
+.title {
+  flex: 1;
+  
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding-right: 10rem;
+}
+
+.title p {
+  margin: 0.2rem 0 0;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.play-pause-button {
+  display: flex;
+  padding: 1rem 1rem 1rem 3rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.play-pause-button audio {
+  width: 350px;
+  height: 30px;
+    
+  padding: 0 2rem 0 2rem;
+}
+.play-pause-button button {
+  background: transparent;     /* White background hatane ke liye */
+  border: none;                /* Agar border bhi dikh raha ho */
+  outline: none;
+  cursor: pointer;
+}
+
+.play-pause-button i {
+  font-size: 30px;             /* Button icon bada karne ke liye */
+  color: #1ec391;                 /* Icon color (change as needed) */
+}
+
+
+.play-pause-button i:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .mood-songs {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+.mood-songs {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 16px;
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+/* Heading */
+.mood-songs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00f2ff;
+}
+
+/* Horizontal scroll container */
+.songs-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+/* Individual song card */
+.songs {
+  min-width: 250px;
+  background-color: #f0fdff;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #00f2ff;
+}
+
+.title p {
+  margin: 0.5rem 0;
+  color: #aaa;
+}
+
+.play-pause-button audio {
+  width: 100%;
+  height: 40px; /* standard height */
+  margin-top: 0.5rem;
+  background-color: #000;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Optional: Hide scrollbar on WebKit browsers */
+.songs-container::-webkit-scrollbar {
+  display: none;
+}
+
+}

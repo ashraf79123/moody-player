@@ -1,0 +1,74 @@
+/* Dark container with neon accents */
+.mood-element {
+  background: #121212;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  max-width: 800px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Video styling */
+.user-video-feed {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 18px;
+  border: 3px solid #00f2ff;
+  box-shadow: 0 0 15px #00f2ff66;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.4s ease;
+}
+
+/* Hover glow */
+.user-video-feed:hover {
+  box-shadow: 0 0 30px #00f2ff;
+}
+
+/* Stylish gradient button */
+.mood-element button {
+  background: linear-gradient(135deg, #00f2ff, #3a86ff);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.mood-element button:hover {
+  background: linear-gradient(135deg, #3a86ff, #00f2ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.6);
+}
+
+.mood-element button:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .mood-element {
+    padding: 2rem 1rem;
+  }
+
+  .user-video-feed {
+    width: 100%;
+    border-width: 2px;
+  }
+
+  .mood-element button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

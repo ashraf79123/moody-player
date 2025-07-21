@@ -1,0 +1,10 @@
+.main{
+  display: flex;
+}
+  /* Responsive */
+  @media (max-width: 600px) {
+.main{
+  display: flex;
+  flex-direction: column;
+}
+  }
